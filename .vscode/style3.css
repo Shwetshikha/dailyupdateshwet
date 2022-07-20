@@ -1,10 +1,7 @@
 
-body {
-    overflow-x: hidden;
-}
-
 .item {
     width: 100% !important; height: 50%;
+    margin-top: 20px;
 }
 .thumbnail 
 { text-align: center;

@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+
+    font-size: large;
+    position: sticky;
+    padding: 10px;
+    text-emphasis-color: rgb(5, 1, 25);
+    color: rgb(5, 1, 25);
+
+}
+
+.nav {
+    position: sticky;
+    display: flex;
+}
+.navbar:hover {
+    background: rgb(33, 4, 90);
+    text-emphasis-color: rgb(5, 1, 25);
+  }
+  
+  @media (max-width: 786px) {
+    .navbar {
+        display: inline-block;
+        
+    }
+  }
+
+.carousel-inner img {
+    margin-top: 5%;
+    width: 100%;
+    height: 680px !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-inner img {
+        margin: 0;
+    }
+
+}
+
+
+h2 {
+    margin: 10px;
+    text-align: center;
+    color: black;
+    font-size: x-large;
+    font-weight: 400;
+
+}
+
+.ad1 {
+    text-align: justify;
+    width: 100%;
+    height: 375px;
+    font-size: x-large;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(6, 6, 66);
+    color: azure;
+    padding: 20px 50px;
+}
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+    .ad1 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+} */
+
+.ad2 {
+
+    margin-top: 10px;
+    width: 100%;
+    height: 375px;
+    background-color: rgba(19, 2, 33, 0.352);    
+}
+.ad2>img 
+{
+height: 375px;
+width: 100%;
+object-fit: fill;
+}
+
+.top-picks {
+
+    background-color: rgba(6, 14, 65, 0.089);
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.top-picks>img {
+
+    height: 100%;
+    width: 20px;
+    object-fit: contain;
+}
+
+.top-brands {
+    background-color: rgba(0, 255, 255, 0.199);
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.heading {
+    text-align: justify;
+    font-size: 50px;
+    font-style: italic, bold;
+}
+
+.thumbnail {
+    text-align: center;
+    font-style: bold;
+    font-size: 25px;
+}
+
+@media (min-width: 1025px) and (max-width: 1600px) {
+
+    .thumbnail {
+        font-size: 20px;
+    }
+}
+
+.thumbnail>img {
+
+    height: 100% !important;
+    width: 100% !important;
+
+}
+
+.dropdown-toggle {
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+.bg-light ma {
+    background-color: rgba(128, 128, 128, 0.082);
+    font-size: 20pt;
+    text-align: center;
+    list-style: none;
+}
+
+.bg-light li {
+    list-style: none;
+}

@@ -1,1 +1,371 @@
 Hello this is some other user testing
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~ (master)
+$ cd Desktop/Shwet
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git log
+commit d8c28252bea9526d7fdb9c8292fb4a4212754db3 (HEAD -> main, origin/main)
+Author: Shwet Shikha <Shwet@shorthillstech.com>
+Date:   Mon Jul 18 20:39:19 2022 +0530
+
+    Removed testing.txt
+
+commit cfffea9787e39b2d0bf73c89965ddbea4d941e68
+Author: Shwet Shikha <Shwet@shorthillstech.com>
+Date:   Mon Jul 18 15:48:01 2022 +0530
+
+    updated
+
+commit bd46b0901e9b6c2466b3b992d31328c1f20235ba
+Merge: b02c7dc 667ff33
+Author: Shwet Shikha <Shwet@shorthillstech.com>
+Date:   Fri Jul 15 18:16:30 2022 +0530
+
+    Merge branch 'main' of https://github.com/Shwetshikha/dailyupdateshwet
+    Merged local and remote
+
+commit b02c7dca63efbd0414cd891a4df4899e15a210b5
+Author: Shwet Shikha <Shwet@shorthillstech.com>
+Date:   Fri Jul 15 18:14:54 2022 +0530
+
+    Added testing.txt
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ cd ..
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop (master)
+$ cd Assignment
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Assignment (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Assignment (master)
+$ git log
+commit 67488104aeff8fc0bc727662be7fc16442f4efda (HEAD -> master)
+Author: Shwet Shikha <Shwet@shorthillstech.com>
+Date:   Tue Jul 19 09:43:05 2022 +0530
+
+    assignment updated
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Assignment (master)
+$ git remote -v
+origin  https://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@github.com/Shwetshikha/dailyupdateshwet.git (fetch)
+origin  https://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@github.com/Shwetshikha/dailyupdateshwet.git (push)
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Assignment (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Shwetshikha/dailyupdateshwet.git'
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Assignment (master)
+$ cd ..
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop (master)
+$ cd Shwet
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Assignment/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git add .
+warning: adding embedded git repository: Assignment
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Assignment
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Assignment
+hint:
+hint: See "git help submodule" for more information.
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Assignment
+
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ cd Assignment
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet/Assignment (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet/Assignment (master)
+$ rm -rf .git
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet/Assignment (main)
+$ cd ..
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Assignment
+
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git Assignment
+git: 'Assignment' is not a git command. See 'git --help'.
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ cd Assignment
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet/Assignment (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ./
+
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet/Assignment (main)
+$ cd ..
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Assignment
+
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git commit -m "Assignment folder updated"
+[main 9f201d3] Assignment folder updated
+ 1 file changed, 1 insertion(+)
+ create mode 160000 Assignment
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git remote -v
+origin  https://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@github.com/Shwetshikha/dailyupdateshwet.git (fetch)
+origin  https://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@github.com/Shwetshikha/dailyupdateshwet.git (push)
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git push origin main
+To https://github.com/Shwetshikha/dailyupdateshwet.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Shwetshikha/dailyupdateshwet.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 298 bytes | 19.00 KiB/s, done.
+From https://github.com/Shwetshikha/dailyupdateshwet
+ * branch            main       -> FETCH_HEAD
+   d8c2825..b783f74  main       -> origin/main
+Merge made by the 'ort' strategy.
+ testing.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testing.txt
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git log
+commit 429412fcdb494b1358eca546a1d4c9b99db6e236 (HEAD -> main)
+Merge: 9f201d3 b783f74
+Author: Shwet Shikha <Shwet@shorthillstech.com>
+Date:   Tue Jul 19 09:50:15 2022 +0530
+
+    Merge branch 'main' of https://github.com/Shwetshikha/dailyupdateshwet
+
+commit 9f201d37c2e89508cda8a5fab46c560f9eb24c24
+Author: Shwet Shikha <Shwet@shorthillstech.com>
+Date:   Tue Jul 19 09:49:25 2022 +0530
+
+    Assignment folder updated
+
+commit b783f746f5d9ae8bd79136264bf2d36b37525e66 (origin/main)
+Author: Shikha <user@example.com>
+Date:   Mon Jul 18 20:55:40 2022 +0530
+
+    Added and modified testing.txt
+
+commit d8c28252bea9526d7fdb9c8292fb4a4212754db3
+Author: Shwet Shikha <Shwet@shorthillstech.com>
+Date:   Mon Jul 18 20:39:19 2022 +0530
+
+    Removed testing.txt
+
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 518 bytes | 518.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Shwetshikha/dailyupdateshwet.git
+   b783f74..429412f  main -> main
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git remote 0v
+error: Unknown subcommand: 0v
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git remote -v
+origin  https://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@github.com/Shwetshikha/dailyupdateshwet.git (fetch)
+origin  https://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@github.com/Shwetshikha/dailyupdateshwet.git (push)
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ rm -rf Assignment
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Assignment
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git add .
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git commit -m ""
+Aborting commit due to empty commit message.
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git commit -m " "
+Aborting commit due to empty commit message.
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git commit -m "Removed assignment folder due to error"
+[main 007ac32] Removed assignment folder due to error
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 Assignment
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 248 bytes | 248.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Shwetshikha/dailyupdateshwet.git
+   429412f..007ac32  main -> main
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ mv "C:\Users\SHTPL0070\Desktop\Assignment" "C:\Users\SHTPL0070\Desktop\Shwet"
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Assignment/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git add --all folder/
+fatal: pathspec 'folder/' did not match any files
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git add --all assignment/
+warning: in the working copy of 'assignment/QUERY RESULTS 2.csv', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assignment/QUERY RESULTS 3.csv', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assignment/QUERY RESULTS.csv', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assignment/assignment table creation.sql', LF will be replaced by CRLF the next time Git touches it
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   assignment/QUERY RESULTS 2.csv
+        new file:   assignment/QUERY RESULTS 3.csv
+        new file:   assignment/QUERY RESULTS.csv
+        new file:   assignment/assignment table creation.sql
+
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git commit -m "Assignment folder added"
+[main 8feb552] Assignment folder added
+ 4 files changed, 71 insertions(+)
+ create mode 100644 assignment/QUERY RESULTS 2.csv
+ create mode 100644 assignment/QUERY RESULTS 3.csv
+ create mode 100644 assignment/QUERY RESULTS.csv
+ create mode 100644 assignment/assignment table creation.sql
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git push origing main
+fatal: 'origing' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+SHTPL0070@DESKTOP-R8MA3K9 MINGW64 ~/Desktop/Shwet (main)
+$ git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1012 bytes | 506.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Shwetshikha/dailyupdateshwet.git
+   007ac32..8feb552  main -> main

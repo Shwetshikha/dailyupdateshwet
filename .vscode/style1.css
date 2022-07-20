@@ -4,7 +4,7 @@
     margin: 0;
 }
 body {
-    overflow-x: hidden;
+   
     background-color: rgb(102, 14, 210);
 }
 
@@ -34,7 +34,7 @@ body {
 .carousel-inner img {
         width: 100%;
         height: 500px !important;
-        margin: auto;
+       margin-top: 20px;
         }
 
 
