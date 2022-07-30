@@ -180,3 +180,9 @@ object-fit: fill;
        
         margin-top: 10px;
     }
+    .marque {
+        font-size: larger;
+        color: rgb(43, 6, 78);
+        height: 100%;
+
+    }
