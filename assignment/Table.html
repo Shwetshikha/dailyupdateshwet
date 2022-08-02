@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      table,
+      th,
+      td,
+      tr {
+        border: 2px solid black;
+        background-color: rgb(162, 146, 226);
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px 20px 10px 20px;
+
+        border-spacing: 5px;
+      }
+      table,
+      tr:nth-child(odd) {
+        background-color: beige;
+      }
+      table,
+      tr:hover {
+        background-color: #d6eeee;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Defining a HTML table-->
+    <table style="width: 100%">
+      <caption style="text-align: center; font-size: medium; color: blueviolet">
+        Employee Details
+      </caption>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th style="width: 50%">First Name</th>
+        <th style="width: 50%">Last Name</th>
+      </tr>
+      <tr>
+        <td>ShortHills</td>
+        <td>89099</td>
+        <td>Shwet</td>
+        <td>Shikha</td>
+      </tr>
+      <tr>
+        <td>ShortHills</td>
+        <td>78679</td>
+        <td>Manvi</td>
+        <td>Kapoor</td>
+      </tr>
+      <tr>
+        <td>Shorthills</td>
+        <td>76436</td>
+        <td>Shubham</td>
+        <td>Maurya</td>
+      </tr>
+    </table>
+    <!-- "th" for header "td" fordefining a cell "tr" for defining a row -->
+
+    <!--Table Header for Multiple columns-->
+    <table style="width: 100%">
+      <caption>
+        Teams
+      </caption>
+      <tr>
+        <th colspan="2">NAME</th>
+        <th>Department</th>
+      </tr>
+      <tr>
+        <td>Manvi</td>
+        <td>Kapoor</td>
+        <td>Front-End</td>
+      </tr>
+      <tr>
+        <td>Shwet</td>
+        <td>Shikha</td>
+        <td>Front-End</td>
+      </tr>
+    </table>
+    <!--colspan and Rowspan-->
+    <table>
+      <caption>
+        Using Colspan
+      </caption>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>AGE</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+    <h2>Cell that spans two rows</h2>
+    <p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+    <table style="width: 100%; border-collapse: collapse">
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+    </table>
+  </body>
+</html>
