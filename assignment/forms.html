@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Block Element and Inline Element</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!--HTML FORMS are used to collect user input, which aresent to server for processing
+    The <form> element is a container for different types of input elements, 
+        such as: text fields, checkboxes, radio buttons, submit buttons, etc.-->
+    <h2>First Form</h2>
+
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" />
+    </form>
+
+    <p>Note that the form itself is not visible.</p>
+
+    <p>
+      Also note that the default width of text input fields is 20 characters.
+    </p>
+    <!--Radio Button-->
+    <h2>Radio Buttons</h2>
+
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML" />  
+      <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />  
+      <label for="css">CSS</label><br />
+       
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+        <label for="javascript">JavaScript</label>
+    </form>
+    <!--CHECKBOXES-->
+    <form>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label>
+    </form>
+    <!--SUBMIT BUTTON-->
+    <form>
+      <input type="submit" value="submit" />
+    </form>
+    <!--NAME ATTRIBUTE-->
+    <form>
+      <label for="fname">FIRST NAME</label><br />
+      <input type="text" id="fname" value="Shwet" /><br /><br />
+      <input type="submit" value="submit" />
+    </form>
+
+    <!-- HTML FORM ATTRIBUTES-->
+    <!--ACTION ATTRIBUTE
+    defines the action  to be performed when form is submitted-->
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      If you click the "Submit" button, the form-data will be sent to a page
+      called "/action_page.php".
+    </p>
+    <!--Target ATTRIBUTE 
+    Add "target" tag to first line of form  
+METHOD ATTRIBUTE : specifies the HTTP method to be used when form data is submitted-->
+    <form
+      action="/action_page.php"
+      target="_parent"
+      method="get"
+      autocomplete="on"
+      novalidate
+    >
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!--HTML Form Elements
+    "input" "label" "select-it defines a dropdown list"-->
+    <h2>The Select Element of Form</h2>
+    <p>It gives the dropdown list</p>
+    <form action="/action_page.php">
+      <label for="Software Fields" name="Choices"></label>
+      <select name="Software Department" id="soft">
+        <option value="Front End" selected>Front End</option>
+        <option value="Back End">Back End</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="Anroid Development">Anroid Development</option>
+      </select>
+      <input type="Submit" />
+    </form>
+
+    <!-- Size defines the number of visible values-->
+    <!--TEXT AREA, BUTTON ELEMENT -->
+    <h2>Textarea</h2>
+    <p>The textarea element defines a multi-line input field.</p>
+
+    <form action="/action_page.php">
+      <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.</textarea
+      >
+      <br /><br />
+      <input type="submit" />
+      <h2>The button Element</h2>
+
+      <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    </form>
+
+    <form action="/action_page.php">
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Autocomplete Attribute-->
+    <form action="/action_page.php" autocomplete="on">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="off"
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- HTML input form Attributes-->
+    <form action="/action_page.php" id="form1">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      The "Last name" field below is outside the form element, but still part of
+      the form.
+    </p>
+
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1" />
+  </body>
+</html>
