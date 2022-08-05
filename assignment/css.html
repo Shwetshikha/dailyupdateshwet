@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="day1css.css" />
+    <title>CSS PRACTICE DAY 1</title>
+  </head>
+  <body>
+    <!--CSS also known to be cascading style sheet-->
+    <h1>This is my first Heading for CSS</h1>
+    <div>
+      <p>This is first paragraph for combinators</p>
+    </div>
+    <!-- difference betwwen child and descendant selector-->
+    <h2>Child Selector</h2>
+
+    <p>
+      The child selector (>) selects all elements that are the children of a
+      specified element.
+    </p>
+
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section>
+        <!-- not Child but Descendant -->
+        <p>Paragraph 3 in the div (inside a section element).</p>
+      </section>
+      <p>Paragraph 4 in the div.</p>
+    </div>
+    <!--Adjacent sibling and general sibling selector-->
+
+    <p>Difference between adjacent selector and general sibling selector</p>
+    <div>
+      <p>Difference between adjacent selector and general sibling selector</p>
+      <p>Difference between adjacent selector and general sibling selector</p>
+      <p>Difference between adjacent selector and general sibling selector</p>
+    </div>
+    <!-- pseudo class-->
+    <h2>Styling a link depending on state</h2>
+
+    <h1>
+      <b><a href="default.asp" target="_blank">This is a link</a></b>
+    </h1>
+    <p>
+      <b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS
+      definition in order to be effective.
+    </p>
+    <p>
+      <b>Note:</b> a:active MUST come after a:hover in the CSS definition in
+      order to be effective.
+    </p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+    <div>
+      <p class="background">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse dolor
+        exercitationem quod pariatur voluptatem itaque perferendis rem quas quam
+        consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Architecto non eum maxime reiciendis esse soluta sequi dolores ducimus?
+        Esse accusantium, exercitationem facere libero sint ipsam tempora dolor
+        praesentium eaque cupiditate!
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, maiores
+        cumque sunt a qui nobis repellat aliquid libero similique rerum enim
+        iste ullam eveniet quis quas provident asperiores earum eum?<br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+        veritatis. Obcaecati placeat, accusantium voluptas architecto fugit quo
+        omnis adipisci minima beatae iste magni nemo officia laudantium
+        repudiandae pariatur illo odio ex consequuntur harum doloribus iusto id
+        vero. Doloribus, odit temporibus officiis eos voluptates ut molestias
+        ullam voluptas cum ratione nulla natus? Dignissimos aliquam possimus
+        quasi eaque, officiis vero eligendi officia sit debitis quibusdam alias
+        recusandae ipsum voluptatum unde fugit ipsam maxime perspiciatis quae
+        modi omnis doloribus natus consequatur pariatur. Placeat quia aperiam
+        excepturi alias quod beatae dolorem, consectetur, hic a odit,
+        consequuntur sint obcaecati similique quibusdam voluptatem. Alias,
+        laudantium error.
+      </p>
+
+      <p class="background image">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse dolor
+        exercitationem quod pariatur voluptatem itaque perferendis rem quas quam
+        consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Architecto non eum maxime reiciendis esse soluta sequi dolores ducimus?
+        Esse accusantium, exercitationem facere libero sint ipsam tempora dolor
+        praesentium eaque cupiditate!
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, maiores
+        cumque sunt a qui nobis repellat aliquid libero similique rerum enim
+        iste ullam eveniet quis quas provident asperiores earum eum?<br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+        veritatis. Obcaecati placeat, accusantium voluptas architecto fugit quo
+        omnis adipisci minima beatae iste magni nemo officia laudantium
+        repudiandae pariatur illo odio ex consequuntur harum doloribus iusto id
+        vero. Doloribus, odit temporibus officiis eos voluptates ut molestias
+        ullam voluptas cum ratione nulla natus? Dignissimos aliquam possimus
+        quasi eaque, officiis vero eligendi officia sit debitis quibusdam alias
+        recusandae ipsum voluptatum unde fugit ipsam maxime perspiciatis quae
+        modi omnis doloribus natus consequatur pariatur. Placeat quia aperiam
+        excepturi alias quod beatae dolorem, consectetur, hic a odit,
+        consequuntur sint obcaecati similique quibusdam voluptatem. Alias,
+        laudantium error.
+      </p>
+      <div>
+        <p class="shorthand">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse dolor
+          exercitationem quod pariatur voluptatem itaque perferendis rem quas
+          quam consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Architecto non eum maxime reiciendis esse soluta sequi dolores
+          ducimus? Esse accusantium, exercitationem facere libero sint ipsam
+          tempora dolor praesentium eaque cupiditate!
+          <br />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, maiores
+          cumque sunt a qui nobis repellat aliquid libero similique rerum enim
+          iste ullam eveniet quis quas provident asperiores earum eum?<br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+          veritatis. Obcaecati placeat, accusantium voluptas architecto fugit
+          quo omnis adipisci minima beatae iste magni nemo officia laudantium
+          repudiandae pariatur illo odio ex consequuntur harum doloribus iusto
+          id vero. Doloribus, odit temporibus officiis eos voluptates ut
+          molestias ullam voluptas cum ratione nulla natus? Dignissimos aliquam
+          possimus quasi eaque, officiis vero eligendi officia sit debitis
+          quibusdam alias recusandae ipsum voluptatum unde fugit ipsam maxime
+          perspiciatis quae modi omnis doloribus natus consequatur pariatur.
+          Placeat quia aperiam excepturi alias quod beatae dolorem, consectetur,
+          hic a odit, consequuntur sint obcaecati similique quibusdam
+          voluptatem. Alias, laudantium error.
+        </p>
+      </div>
+      <div>
+        <h1 class="borders">
+          <p1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            tempore excepturi, expedita quam magnam dolorum neque impedit
+            inventore voluptates autem dignissimos voluptate doloremque, ullam
+            natus perferendis distinctio, perspiciatis repudiandae aspernatur
+            tempora sunt. Sequi expedita aut consequuntur, rem cupiditate eaque
+            praesentium impedit officiis tempore vel! Laboriosam, labore officia
+            distinctio molestiae mollitia amet cum corporis doloremque, </p1
+          ><br /><br /><br />
+
+          <p2> This is the testing of border properties of CSS </p2
+          ><br /><br /><br />
+        </h1>
+      </div>
+      <div>
+        <p3>
+          et molestiae magnam nam placeat fugit illum quis officia obcaecati
+          ducimus assumenda nostrum eveniet! Laboriosam error accusamus quia
+          vero a, consequatur animi modi aut veniam unde ducimus, repudiandae
+          inventore, nam asperiores voluptatem iusto possimus tempore qui
+          voluptas dolorum quaerat. Suscipit aliquam unde aspernatur nulla culpa
+          voluptatibus repellendus, similique, deserunt laboriosam repellat
+          quasi, consectetur necessitatibus eveniet. Itaque enim, sint a
+          quisquam repellendus blanditiis! Ut asperiores et fugit eligendi iste.
+          Culpa sint deleniti ex sapiente cumque. Et, quas voluptatibus unde
+          labore autem fuga? </p3
+        ><br /><br /><br />
+      </div>
+    </div>
+  </body>
+</html>

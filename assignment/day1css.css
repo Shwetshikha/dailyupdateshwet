@@ -1,0 +1,94 @@
+h1{
+    background-color: aqua;
+    text-align: center;
+    text-decoration: wavy;
+
+}
+body {
+    background-color: bisque;
+}
+div p {
+    background-color: blue;
+    text-align: justify;
+}
+
+div > p {
+    background-color: yellow;
+  }
+
+  div + p {
+    background-color: yellowgreen;
+  }
+  div ~ p {
+    background-color: red;
+  }
+  a:link {
+    color: red;
+  }
+  
+  /*visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+   a:hover {
+    color: hotpink;
+  } 
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  p:first-child i {
+    color: blue;
+  } 
+
+  /* css background*/
+  .background{
+    background-color: rgb(225, 225, 235);
+    opacity: 0.9;
+    color: black;
+    
+  }
+  .image
+  {
+    background-image: url(https://i.pinimg.com/550x/94/fb/9e/94fb9e94f0db7e3d429df2d9c64527d2.jpg);
+    color: azure;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+  }
+/* order has to be color, image, repeat, attatchment,position
+*/
+  div .shorthand
+  {
+    background-color: rgb(119, 13, 140);
+    background-image: url(https://i.pinimg.com/236x/cc/e0/78/cce078329ede2e53f7dde2d205e93c79.jpg);
+    background: scroll; 
+  }
+  .borders > p1 {
+    border: solid;
+    border-color: black;
+    background-color: aliceblue;
+    border-style: dashed;
+    text-align: justify;
+    border-width: 5px;
+
+  }
+  .borders > p2{
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dashed;
+  border-left-style: double;
+  border-width: 5px;
+  text-align: left;
+  text-shadow: rgb(119, 13, 140);
+  border-color: blue;
+  border-radius: 12px;
+  }
+div > p3 {
+    text-align: right;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+}
