@@ -1,0 +1,341 @@
+#rcorner1
+{
+    border-radius: 25px;
+    background-color: rgb(16, 174, 66);
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+
+}
+#rcorner2
+{
+    border: 10px solid transparent;
+    padding: 15px;
+   background-color: black;
+   width: 200px;
+   height: 150px;
+
+    border-image: url(https://tinyjpg.com/images/social/website.jpg) 30 round;
+}
+
+#rcorner3
+{
+    background-image: url(https://tinyjpg.com/images/social/website.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: azure;
+    width: 200px;
+    height: 100px;
+    background-clip: content-box;
+}
+#gradient {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(blue, yellow 10%, green 20%);
+  }
+#boxshadow
+{
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px 12px lightblue;
+}
+div.card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  
+div.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+  }
+  
+  div.container {
+    padding: 10px;
+  }
+  p.test1{
+    white-space: nowrap;
+    width: 200px;
+    border: #4CAF50 1px solid;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  p.test2 {
+    white-space: nowrap;
+    width: 200px; 
+    height: 50px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+  } */
+  
+  div#myDiv {
+    transform: rotate(20deg);
+  }
+  div#myDiv1 {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+  }
+  div#myDiv2 {
+    transform: matrix(1, 0, 0.5, 1, 150, 0);
+  }
+  div.tran {
+    width: 100px;
+    height: 100px;
+    background: rgb(93, 63, 230);
+    transition: width 2s, height 4s;
+  }
+  
+  div.tran:hover {
+    width: 300px;
+    height: 300px;
+  }
+  div.ani {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: width 2s, height 4s;
+    
+  }
+  
+  @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+   div.ani:hover {
+      width: 300px;
+      height: 300px;
+   }
+   div.anidelay {
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    
+  }
+  
+  @keyframes example1 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  .tooltip {
+    position: absolute;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: rgb(185, 20, 20);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  div.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+    height: 100px;
+    width: 100px;
+  }
+  img.ref {
+    -webkit-box-reflect: right 20px;
+  }
+  img.object {
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+    object-position: 10% 50%;
+  }
+  .mask1 {
+    -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 0, 0.5));
+} 
+    
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: all 0.8s
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 0 4px;
+  font-size: 22px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;
+  border: 1px solid #ddd;}
+
+  ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  
+  ul.breadcrumb li {display: inline;}
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {color: green;}
+
+  .newspaper {
+    column-count: 4;
+    column-gap: 20px;
+    column-rule-style: groove;
+    column-rule-color: aquamarine;
+    column-span: all;
+    text-align: center;
+
+  }
+  div.ex1 {
+    margin: 20px;
+    border: 1px solid black;
+    outline: 4px solid red;
+    outline-offset: 15px;
+    resize: both;
+    overflow: hidden;
+  } 
+  
+  div.ex2 {
+    margin: 10px;
+    border: 1px solid black;
+    outline: 5px dashed blue;
+    outline-offset: 5px;
+  } 
+  /* variable declaration in css*/
+  :root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
+
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}

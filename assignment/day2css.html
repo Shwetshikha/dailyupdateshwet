@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="day2css.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <title>CSS PRACTICE DAY 2</title>
+  </head>
+  <body>
+    <h1>Border radius property</h1>
+    <p id="rcorner1"></p>
+    <p id="rcorner2"></p>
+    <p id="rcorner3"></p>
+
+    <div id="gradient"></div>
+    <div id="conicgradient"></div>
+    <div id="boxshadow"></div>
+    <h1>CARD</h1>
+    <h1>Create Cards</h1>
+
+    <p>The box-shadow property can be used to create paper-like cards:</p>
+
+    <div class="card">
+      <div class="header">
+        <h1>1</h1>
+      </div>
+
+      <div class="container">
+        <p>January 1, 2021</p>
+      </div>
+    </div>
+    <!--text effect-->
+    <h1>The text overflow property</h1>
+    <h2>text overflow: clip</h2>
+    <p class="test1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo
+      consectetur culpa hic repellendus nesciunt ipsa, facilis doloremque fugiat
+      eaque non laboriosam sunt ad vero consequuntur facere eveniet officia
+      rerum aut fugit dolorem cumque voluptas est! Reprehenderit, consectetur
+      inventore eius aspernatur enim ut voluptatem cumque dolorum corrupti ullam
+      placeat nesciunt ex dolores omnis alias temporibus illo magnam ratione
+      praesentium voluptate. Labore ullam voluptate facilis unde nulla
+      consectetur nobis earum! Fugiat earum aliquam voluptatum a animi totam
+      eligendi corrupti nesciunt tempora unde, voluptate amet sint, esse,
+      distinctio ipsa maxime nulla in magni! Velit ipsam corporis, voluptatem
+      sit officia obcaecati nostrum maiores?
+    </p>
+    <p class="test2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio sequi
+      sit deserunt ab accusantium? Nemo minima possimus error tenetur assumenda
+      quasi eos veritatis iure aliquam libero, cum non magni ut architecto
+      ducimus cumque sint nobis facere. Atque tenetur quibusdam esse magni hic
+      modi, odit necessitatibus suscipit voluptates, accusamus consequuntur
+      provident ducimus asperiores nobis totam quia! Nemo quisquam quos aliquid
+      alias vel consequatur assumenda aperiam similique dolore, hic, nesciunt
+      facere voluptate pariatur mollitia quaerat quis voluptas id magni dicta!
+      Distinctio nesciunt esse provident quas modi alias sint explicabo officia
+      minima quos eligendi vitae minus commodi expedita, accusantium culpa
+      temporibus vel.
+    </p>
+
+    <!--2D transform Method-->
+    <h1>The rotate() Method</h1>
+
+    <p>
+      The rotate() method rotates an element clockwise or counter-clockwise.
+    </p>
+
+    <div>This a normal div element.</div>
+
+    <div id="myDiv">This div element is rotated clockwise 20 degrees.</div>
+    <!-- the matrix method-->
+    <h1>The matrix() Method</h1>
+
+    <p>The matrix() method combines all the 2D transform methods into one.</p>
+
+    <div>This a normal div element.</div>
+
+    <div id="myDiv1">Using the matrix() method.</div>
+
+    <div id="myDiv2">Another use of the matrix() method.</div>
+    <!--transition property-->
+    <h1>The transition Property</h1>
+
+    <p>
+      <strong
+        >Hover over the div element below, to see the transition effect</strong
+      >
+    </p>
+
+    <div class="tran">
+      <h1>This is the transition property</h1>
+    </div>
+
+    <!--the Animation Property-->
+    <h1>CSS Animation</h1>
+
+    <div class="ani">
+      CSS Animation property the most important thing being the animation
+      duration without which the effect is assumed to be of zero duration
+    </div>
+
+    <p>
+      <b>Note:</b> When an animation is finished, it goes back to its original
+      style.
+    </p>
+    <p>Hover to see the combined effect of animation and transition</p>
+    <!--css animation delay-->
+    <h1>CSS Animation</h1>
+
+    <div class="anidelay">
+      <p>
+        The animation-delay property specifies a delay for the start of an
+        animation. The following example has a 2 seconds delay before starting
+        the animation:
+      </p>
+    </div>
+
+    <!--Tooltips-->
+    <h2>Fade In Tooltip on Hover</h2>
+    <p>
+      When you move the mouse over the text below, the tooltip text will fade in
+      and take 1 second to go from completely invisible to visible.
+    </p>
+
+    <div class="tooltip">
+      Hover over me
+      <span class="tooltiptext">Tooltip text</span>
+    </div>
+    <h2>Responsive Image</h2>
+
+    <p>
+      Responsive images will automatically adjust to fit the size of the screen.
+    </p>
+    <p>Resize the browser window to see the effect:</p>
+
+    <img src="me.jpg" alt="Cinque Terre" width="500" height="300" />
+
+    <h2>Responsive Polaroid Images / Cards</h2>
+
+    <div class="polaroid">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg"
+        alt="5 Terre"
+        style="width: 100%"
+      />
+      <div class="container">
+        <p>Cinque Terre</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img
+        src="https://res.cloudinary.com/demo/image/upload/a_ignore/sample.jpg"
+        alt="Norther Lights"
+        style="width: 100%"
+      />
+      <div class="container">
+        <p>Northern Lights</p>
+      </div>
+    </div>
+    <h1>CSS Image Reflection</h1>
+
+    <p>Show the reflection below the image, with a 20 pixels offset:</p>
+    <img src="download.jpg" class="ref" />
+    <h2>Using object-fit: scale-down</h2>
+
+    <img class="object" src="me.jpg" alt="Paris" width="400" height="300" />
+    <!--css Masking-->
+    <h1>The mask-image Property</h1>
+
+    <h3>An image with a mask layer image:</h3>
+    <div class="mask1">
+      <img src="download.jpg" alt="Cinque Terre" width="600" height="400" />
+    </div>
+
+    <h3>Original image:</h3>
+    <img src="download.jpg" alt="Cinque Terre" width="600" height="400" />
+
+    <!--mask image property-->
+    <h1>The mask-image Property</h1>
+
+    <h3>An SVG mask layer (formed as a star):</h3>
+    <svg width="600" height="400">
+      <mask id="svgmask2">
+        <polygon
+          fill="#ffffff"
+          points="100,10 40,198 190,78 10,78 160,198"
+        ></polygon>
+      </mask>
+      <image
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xlink:href="download.jpg"
+        mask="url(#svgmask2)"
+      ></image>
+    </svg>
+
+    <h3>Original image:</h3>
+    <img src="download.jpg" alt="Cinque Terre" width="600" height="400" />
+
+    <!--css buttons-->
+
+    <h2>Disabled Button</h2>
+
+    <p>
+      Use the opacity property to add some transparency to a button (make it
+      look disabled):
+    </p>
+
+    <button class="button" style="vertical-align: middle">
+      <span>Normal Button</span>
+    </button>
+    <button class="button disabled">Disabled Button</button>
+
+    <!--css pagination-->
+    <h2>Active and Hoverable Pagination</h2>
+
+    <p>Move the mouse over the numbers.</p>
+
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a class="active" href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+    <!--breadcrums-->
+    <div>
+      <h2>Breadcrumb Pagination</h2>
+
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>Italy</li>
+      </ul>
+    </div>
+    <!--css multiple columns-->
+    <h1>Create Multiple Columns</h1>
+
+    <div class="newspaper">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+      iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+      illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+      odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+      dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+      eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+      possim assum.
+    </div>
+    <!--css user interface
+    resizing the div element
+  syntax used is resize: horizontal/vertical/both/none
+overflow: auto
+outline offset -->
+    <h1>The outline-offset Property</h1>
+
+    <div class="ex1">
+      This div has a 4 pixels solid red outline 15 pixels outside the border
+      edge. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsam
+      laboriosam iure, ex, maxime dolores at et adipisci error architecto qui
+      est provident doloribus exercitationem soluta quia hic, nostrum ut
+      accusamus. Alias nemo quae voluptates maxime, atque aut nulla, ex minus
+      iure debitis placeat quisquam doloremque eaque. Consequatur, eos. Est
+      obcaecati quod odio repellendus dolor perspiciatis molestiae error, natus
+      cum saepe iusto illum nobis quidem distinctio quo dolore illo maxime
+      voluptas. Quo corrupti tempora doloremque aliquam ipsam neque pariatur
+      tempore rem harum nostrum ad nisi odio similique minus natus, fugit
+      architecto magnam suscipit aliquid consequatur dicta. Necessitatibus ipsa
+      quidem dignissimos!
+    </div>
+    <br />
+
+    <div class="ex2">
+      This div has a 5 pixels dashed blue outline 5 pixels outside the border
+      edge.
+    </div>
+    <!--CSS VARIABLES MOST IMPORTANT as 
+    css variables have access to the DOM
+  i.e we can create variables with local as well as global scope
+change the variables with java script and chnge the variables based on media queries
+-->
+    <h1>this is demonstrated in second part of this file</h1>
+    <h1>Demonstration of overriding Global variable with local variable</h1>
+  </body>
+</html>

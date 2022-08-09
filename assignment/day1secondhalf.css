@@ -224,3 +224,11 @@ h1 {
   padding: 15px;
   text-align: center;
 }
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
