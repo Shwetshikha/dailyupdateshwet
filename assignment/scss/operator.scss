@@ -1,0 +1,23 @@
+.abc {
+    padding: 10px == 10px;
+    margin: 10px == 10rem
+    
+}
+.bcd{
+    padding: 10px > 30px;
+    margin: 1000ms >= 1s;
+}
+.efg{
+    padding:  arial == 'arial' or  10px == 20;
+}
+/* string operator*/
+$var1 : 10;
+$var2 : 2;
+
+.test {
+    padding: $var1 + $var2 + px;
+    
+}
+.test h1{
+    font-size: $var1 * 2 + px;
+}
