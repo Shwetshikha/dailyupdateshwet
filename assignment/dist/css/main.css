@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(231, 211, 211);
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.main .main_paragraph {
+  font-weight: 700;
+}
+.main .main_paragraph:hover {
+  color: plum;
+}
+
+.light {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
