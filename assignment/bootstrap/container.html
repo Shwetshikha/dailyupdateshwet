@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="container.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>BOOTSTRAP FIRST PAGE</title>
+  </head>
+  <body>
+    <!-- USE OF CONTAINER -->
+    <div class="container">
+      <h1>My First Bootstrap Page</h1>
+      <p>This part is inside a .container class.</p>
+      <p>The .container class provides a responsive fixed width container.</p>
+    </div>
+    <div class="container-fluid">
+      <h1>CONTAINER-FLUID</h1>
+      <p>This is the container with full width</p>
+      <p>The class is taken to be container-fluid</p>
+      <p>
+        The background color is shown to define the width of container and
+        container fluid
+      </p>
+    </div>
+
+    <!-- container with border, padding and margin-->
+    <div class="container p-3 my-3 border">
+      <h1>My First Bootstrap Page</h1>
+      <p>This container has a border and some extra padding and margins.</p>
+    </div>
+
+    <div class="container p-3 my-3 bg-dark text-white">
+      <h1>My First Bootstrap Page</h1>
+      <p>
+        This container has a dark background color and a white text, and some
+        extra padding and margins.
+      </p>
+    </div>
+
+    <div class="container p-3 my-3 bg-primary text-white">
+      <h1>My First Bootstrap Page</h1>
+      <p>
+        This container has a blue background color and a white text, and some
+        extra padding and margins.
+      </p>
+    </div>
+
+    <!-- for different screens we use container
+    sm md lg xl
+and for making responsive containers
+-->
+    <div class="container">
+      <h1>Making a responsive container</h1>
+      <p>Resize the browser window to see the effect</p>
+    </div>
+    <div class="container-sm border">
+      Container-sm for screen less than 576px 100%
+    </div>
+    <br />
+
+    <div class="container-md border">
+      for screen less than 768px shows full screen
+    </div>
+    <br />
+
+    <div class="container-lg border">
+      for screen less than 992px shows full screen
+    </div>
+    <br />
+
+    <div class="container-xl border">
+      for screen less than 1200px shows 100%
+    </div>
+    <br />
+  </body>
+</html>
