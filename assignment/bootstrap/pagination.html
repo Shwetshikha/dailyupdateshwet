@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="grid.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>BOOTSTRAP PAGINATION</title>
+  </head>
+  <body>
+    <!--ADD PAGINATION TO UL ELEMENT-->
+    <div class="container">
+      <div class="column">
+        <h2>Pagination</h2>
+        <p>
+          To create a basic pagination, add the .pagination class to an ul
+          element. Then add the .page-item to each li element and a .page-link
+          class to each link inside li:
+        </p>
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </div>
+      <!--BREAD CRUMBS-->
+      <div class="column">
+        <h2>BREADCRUMS</h2>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">INFO</a></li>
+          <li class="breadcrumb-item active"><a href="#">HOME</a></li>
+          <li class="breadcrumb-item"><a href="#">News</a></li>
+          <li class="breadcrumb-item disabled"><a href="#">Mail Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

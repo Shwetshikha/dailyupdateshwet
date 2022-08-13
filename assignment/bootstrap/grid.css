@@ -1,0 +1,25 @@
+.column
+{
+    background-color: aqua;
+}
+.table1{
+    border: solid;
+    text-align: center;
+    border-radius: 1px;
+    background-color: azure;
+}
+.table1 tr{
+    border: dashed;
+}
+.table1 th{
+    border: dotted;
+}
+.table1 td{
+    border: dashed;
+}
+.table2{
+    background-color: rgb(244, 247, 248);
+}
+.table2{
+    hover
+}

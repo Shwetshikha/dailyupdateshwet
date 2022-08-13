@@ -15,5 +15,64 @@
 
     <title>BOOTSTRAP FIRST GRID</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Bootstrap grid system allows grid system to make the page in 12 columns
+    across the page
+grid system is responsive and re arranges into columns automatically depending upon the screen size
+.col
+.col-sm-
+.col-md-
+.col-lg-
+.col-xl-
+
+<MAKING THREE COLUMNS WITH EQUAL WIDTH-->
+    <div class="container-fluid">
+      <h1>Seven equal width columns</h1>
+      <p>
+        Note: Try to add a new div with class="col" inside the row class - this
+        will create four equal-width columns.
+      </p>
+      <div class="row">
+        <div class="col" style="background-color: lavender">.col</div>
+        <div class="col" style="background-color: orange">.col</div>
+        <div class="col" style="background-color: lavender">.col</div>
+        <div class="col" style="background-color: lavender">.col</div>
+        <div class="col" style="background-color: lavender">.col</div>
+        <div class="col" style="background-color: lavender">.col</div>
+        <div class="col" style="background-color: lavender">.col</div>
+      </div>
+      <!--we can add other rows in a single page by specifying column width
+    -->
+      <div></div>
+      <h1>Responsive Columns</h1>
+      <p>Resize the browser window to see the effect.</p>
+      <p>
+        The columns will automatically stack on top of each other when the
+        screen is less than 576px wide.
+      </p>
+      <div class="row">
+        <div class="col-sm-3" style="background-color: lavender">.col-sm-3</div>
+        <div class="col-sm-3" style="background-color: lavenderblush">
+          .col-sm-3
+        </div>
+        <div class="col-sm-3" style="background-color: lavender">.col-sm-3</div>
+        <div class="col-sm-3" style="background-color: lavenderblush">
+          .col-sm-3
+        </div>
+      </div>
+      <!-- we can make unequal column width also responsive-->
+      <h1>Two Unequal Responsive Columns</h1>
+      <p>Resize the browser window to see the effect.</p>
+      <p>
+        The columns will automatically stack on top of each other when the
+        screen is less than 768px wide.
+      </p>
+      <div class="row">
+        <div class="col-md-4" style="background-color: lavender">.col-md-4</div>
+        <div class="col-md-8" style="background-color: lavenderblush">
+          .col-md-8
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
