@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTRO OF JAVASCRIPT</title>
+  </head>
+  <body>
+    <h2>WHAT CAN JAVASCRIPT DO</h2>
+    <p id="demo">JAVASCRIPT CAN CHANGE HTML CONTENT</p>
+    <button
+      type="button"
+      onclick='document.getElementById("demo").innerHTML = "Hello Javascript !"'
+    >
+      CLICK ME ! <br />
+      to see changes
+    </button>
+    <hr />
+    <div class="container">
+      <h2>What can Javascript Do? an illustration</h2>
+      <p>
+        In this case Javascript can change the value of the src (source)
+        attribute of an image.
+      </p>
+
+      <button
+        onclick="document.getElementById('myimg').src='https://c.tenor.com/QAOoRER40cIAAAAi/light-bulb-hi.gif'"
+      >
+        Turn On the lights
+      </button>
+      <img
+        src="https://c.tenor.com/QAOoRER40cIAAAAi/light-bulb-hi.gif"
+        style="width: 100px"
+      />
+      <button
+        onclick="document.getElementById('myimg').src='https://cdn3.vectorstock.com/i/1000x1000/10/37/light-bulb-glowing-element-shining-lamp-vector-21811037.jpg'"
+      >
+        turn Off the Lights
+      </button>
+      <h2>What Can JavaScript Do?</h2>
+
+      <p id="font">JavaScript can change the style of an HTML element.</p>
+
+      <button
+        type="button"
+        onclick="document.getElementById('font').style.fontSize='35px'"
+      >
+        Click Me!
+      </button>
+      <!--GETTING SOMETHING HIDDEN-->
+      <div>
+        <h2>What Can JavaScript Do?</h2>
+
+        <p id="hide">JavaScript can hide HTML elements.</p>
+
+        <button
+          type="button"
+          onclick="document.getElementById('hide').style.display='none'"
+        >
+          Click Me!
+        </button>
+      </div>
+      <div>
+        <h2>What Can JavaScript Do?</h2>
+
+        <p>JavaScript can show hidden HTML elements.</p>
+
+        <p id="show" style="display: none">Hello JavaScript!</p>
+
+        <button
+          type="button"
+          onclick="document.getElementById('show').style.display='block'"
+        >
+          Click Me!
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.abc {
+  padding: true;
+  margin: false;
+}
+
+.bcd {
+  padding: false;
+  margin: true;
+}
+
+.efg {
+  padding: true;
+}
+
+/* string operator*/
+.test {
+  padding: 12px;
+}
+
+.test h1 {
+  font-size: 20px;
+}/*# sourceMappingURL=operator.css.map */

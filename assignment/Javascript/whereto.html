@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function myFunction() {
+        document.getElementById("head").innerHTML = "Paragraph Changed";
+      }
+    </script>
+    <title>WHERE TO</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2>JavaScript in Body</h2>
+
+        <p id="body"></p>
+
+        <script>
+          document.getElementById("body").innerHTML = "My First JavaScript";
+        </script>
+        <br />
+        <h2>DEMO OF JAVASCRIPT IN HEAD</h2>
+        <p id="head">A PARAGRAPH</p>
+        <button type="button" onclick="myFunction()">TRY IT</button>
+      </div>
+    </div>
+  </body>
+</html>

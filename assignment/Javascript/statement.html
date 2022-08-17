@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        background-color: aqua;
+      }
+    </style>
+    <title>JS Statement</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <p>Getting JavaScript statements</p>
+        <p>
+          A <strong>JAVASCRIPT</strong>Program is a list of <b>Statements</b>to
+          be executed by a computer
+        </p>
+        <p id="state"></p>
+        <script>
+          let x, y, z; //statement 1//
+          x = 9;
+          y = 5;
+          z = x + y;
+          document.getElementById("state").innerHTML =
+            "The Value of Z is" + z + ".";
+        </script>
+      </div>
+      <div>
+        <h2>Statement in Javascript</h2>
+        <p>In HTML, JavaScript statements are executed by the browser</p>
+        <p id="jav"></p>
+        <script>
+          document.getElementById("jav").innerHTML = "Hello From Shwet!";
+        </script>
+      </div>
+      <div>
+        <h2>javascripts Statement separation</h2>
+        <p>JavaScript statements are separated by semicolons.</p>
+        <p id="semi"></p>
+        <script>
+          let a, b, c, d;
+          a = 3;
+          b = 4;
+          c = 5;
+          d = a + b + c;
+          document.getElementById("semi").innerHTML = d;
+        </script>
+      </div>
+      <div>
+        <h2>Multiple statement</h2>
+        <p>separation in one line is allowed</p>
+        <p id="multi"></p>
+        <script>
+          let e, f;
+          e = 5;
+          f = e + c;
+          document.getElementById("multi").innerHTML = f;
+        </script>
+      </div>
+      <h2>Declaring two id and use of "Function"</h2>
+      <button type="button" onclick="myFunction()">Click me!</button>
+      <p id="one"></p>
+      <p id="two"></p>
+      <script>
+        function myFunction() {
+          document.getElementById("one").innerHTML = "Hello to Everyone";
+          document.getElementById("two").innerHTML = "Shwet Shikha";
+        }
+      </script>
+    </div>
+  </body>
+</html>

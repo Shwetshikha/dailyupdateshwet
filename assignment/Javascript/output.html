@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OUTPUT OF JAVASCRIPT</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2>MY FIRST JAVASCRIPT OUTPUT</h2>
+        <p>As Output of inner HTML</p>
+        <p id="inner"></p>
+        <script>
+          document.getElementById("inner").innerHTML = 5 + 6;
+        </script>
+      </div>
+      <!--USING "document.write()"-->
+      <h2>GETTING OUTPUT</h2>
+      <p>As document.write()</p>
+      <script>
+        document.write(7 + 8);
+      </script>
+      <!--IMPORTANT-->
+      <p>
+        <strong>NOTE: </strong> Using document.write() after an HTML document is
+        loaded, will delete all existing HTML
+      </p>
+    </div>
+    <div>
+      <h2>CLICK ON <u>"Try it"</u> BUTTON TO SEE THE EFFECT</h2>
+      <p>of using "document.write after HTML"</p>
+
+      <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    </div>
+    <div>
+      <h2>GETTING WINDOWS ALERT</h2>
+      <p>Reload the page to see the window alert effect</p>
+
+      <script>
+        window.alert("SHWET JAVASCRIPT");
+      </script>
+    </div>
+    <div>
+      <p>
+        You can skip the window keyword <br />
+        to see the effect
+      </p>
+      <script>
+        alert(7 + 9);
+      </script>
+    </div>
+    <div>
+      <p>Using console.log()</p>
+      <script>
+        console.log("Shwet Shikha");
+      </script>
+    </div>
+    <div>
+      <h2>The window.print() Method</h2>
+      <p>Click on the button to print the current page</p>
+      <button onclick="window.print()">Print this output page</button>
+    </div>
+  </body>
+</html>

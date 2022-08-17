@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS SYNTAX</title>
+    <style>
+        div{
+            background-color: aquamarine;
+        }
+    </style>
+  </head>
+  <body>
+   
+      <div>
+        <h2>JAVASCRIPT VALUES</h2>
+        <p>It defines two types of values</p>
+        <ol><li> Fixed values known to be <b>Literals</b>
+
+
+        </li>
+        <li>Variable Values known to be <b>Variables</b></li>
+
+        </ul></ol>
+      </div>
+      <div>
+        <h2>JavaScript Numbers</h2>
+        <p>Number can be written with or without decimals</p>
+        <p id="num"></p>
+        <script>document.getElementById("num").innerHTML = 10.89;</script>
+      </div>
+      <div>
+        <h2>JavaScripts Strings</h2>
+        <p>Strings can be written with "" or '' quotes</p>
+        <p id="string"></p>
+        <script>document.getElementById("string").innerHTML = 'Shwet Shikha';</script>
+      </div>
+      <div>
+        <h2>Javascript Variables</h2>
+        <p>In this example, X is defined as a variable.<br>
+        Then, Xis assigned a value of say anything "9"</p>
+        <p id="var"></p>
+        <script>let x;
+        x = 9; document.getElementById("var").innerHTML = x;</script>
+      </div>
+      <div>
+        <h2>JavaScript Operators</h2>
+        <p>Javascrip uses arithmetic operators to compute values as in algebra</p>
+        <p id="opr"></p>
+        <script>document.getElementById("opr").innerHTML = (9 + 12)* 2;</script>
+      </div>
+      <div>
+        <h2>Assigning JavaScript Values</h2>
+        <p>In JavaScript the "=" operator is used to assign values to variables.</p>
+        <p id="val"></p>
+        <script>
+            let w, y;
+            w = 7;
+            y = 8;
+            document.getElementById("val").innerHTML = w + y;
+
+
+        </script></div>
+        <div>
+            <h2>JavaScript Expressions</h2>
+
+<p>Expressions for computing the values.</p>
+
+<p id="exp"></p>
+
+<script>
+document.getElementById("exp").innerHTML = "Shwet" + " "  + "Shikha";
+</script>
+        </div>
+      <div>
+    <h2>Comments in JavaScript</h2>
+    <p>use // or /* --xyz-- */ to comment out the portion of code which is not to be executed</p>
+    <p id="com"></p>
+<script>
+    //comment out//
+    /*document.getElementById("myH").innerHTML = "Welcome to my Homepage";
+document.getElementById("myP").innerHTML = "This is my first paragraph.";
+*/
+document.getElementById("com").innerHTML = "The comment-block will not get executed"
+</script>     
+
+</div>
+    
+  </body>
+</html>
