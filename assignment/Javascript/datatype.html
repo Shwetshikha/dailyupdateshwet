@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        background-color: aqua;
+      }
+    </style>
+    <title>Data Type</title>
+  </head>
+  <body>
+    <div>
+      <h2>JavaScript</h2>
+
+      <p>
+        JavaScript evaluates expressions from left to right.<br />
+        Different sequences can produce different results:
+      </p>
+
+      <p id="da"></p>
+
+      <script>
+        let x = 16 + 4 + "Volvo";
+        document.getElementById("da").innerHTML = x;
+      </script>
+    </div>
+    <div>
+      <h2>Dynamic JavaScript</h2>
+      <p>
+        JavaScript has dynamic types. This means that the same variable can be
+        used to hold different data types:
+      </p>
+
+      <p id="demo"></p>
+
+      <script>
+        let y; // Now x is undefined
+        y = 5; // Now x is a Number
+        y = "Shwet"; // Now x is a String
+
+        document.getElementById("demo").innerHTML = y;
+      </script>
+    </div>
+    <div>
+      <h2>JavaScript Strings</h2>
+
+      <p>
+        Strings are written with quotes. You can use single or double quotes:
+      </p>
+
+      <p id="str"></p>
+
+      <script>
+        let carName1 = "Volvo XC60";
+        let carName2 = "Volvo XC60";
+
+        document.getElementById("str").innerHTML = carName1 + "<br>" + carName2;
+      </script>
+    </div>
+    <div>
+      <p>
+        You can use quotes inside a string, as long as they don't match the
+        quotes surrounding the string:
+      </p>
+
+      <p id="in"></p>
+
+      <script>
+        let answer1 = "It's alright";
+        let answer2 = "She is called 'Shwet'";
+        let answer3 = 'She is called "Shwet"';
+
+        document.getElementById("in").innerHTML =
+          answer1 + "<br>" + answer2 + "<br>" + answer3;
+      </script>
+    </div>
+    <div>
+      <h2>JavaScript Booleans</h2>
+
+      <p>Booleans can have two values: true or false:</p>
+
+      <p id="bol"></p>
+
+      <script>
+        let w = 5;
+        let v = 5;
+        let z = 6;
+
+        document.getElementById("bol").innerHTML = (w == v) + "<br>" + (w == z);
+      </script>
+    </div>
+  </body>
+</html>

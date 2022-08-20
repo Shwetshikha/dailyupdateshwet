@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        background-color: beige;
+      }
+    </style>
+    <title>Functions</title>
+  </head>
+  <body>
+    <div>
+      <h2>JavaScript Functions</h2>
+      <p>
+        JavaScript function is a block of code designed to perform a particular
+        task. <br />
+        A JavaScript function is executed when "something" invokes it (calls it)
+      </p>
+      <p id="fun"></p>
+      <script>
+        function myFunction(p1, p2) {
+          return p1 * p2;
+        }
+        document.getElementById("fun").innerHTML = myFunction(9, 12);
+      </script>
+    </div>
+    <div>
+      <h2>Reuse Code</h2>
+      <p>
+        This example calls a function to convert from Fahrenheit to Celsius:
+      </p>
+      <p id="re"></p>
+      <script>
+        function toCelsius(f) {
+          return (5 / 9) * (f - 32);
+        }
+        document.getElementById("re").innerHTML = toCelsius(77);
+      </script>
+    </div>
+    <div>
+      <h2>Calling a function</h2>
+      <p>
+        Accessing a function without () will return the function definition
+        instead of the function result:
+      </p>
+      <p id="par"></p>
+      <script>
+        function toCelsius(g) {
+          return (5 / 9) * (g - 32);
+        }
+        document.getElementById("par").innerHTML = toCelsius;
+      </script>
+    </div>
+    <div>
+      <h2>Using "Function" as variables</h2>
+      <p id="var"></p>
+
+      <script>
+        document.getElementById("var").innerHTML =
+          "The temperature is " + toCelsius(77) + " Degree Celsius";
+
+        function toCelsius(fahrenheit) {
+          return (5 / 9) * (fahrenheit - 32);
+        }
+      </script>
+    </div>
+    <div>
+      <h2>Local Variable</h2>
+      <p>Outside myFunction() carName is undefined.</p>
+
+      <p id="demo1"></p>
+
+      <p id="demo2"></p>
+
+      <script>
+        myFunction();
+
+        function myFunction() {
+          let carName = "Volvo";
+          document.getElementById("demo1").innerHTML =
+            typeof carName + " " + carName;
+        }
+
+        document.getElementById("demo2").innerHTML = typeof carName;
+      </script>
+    </div>
+    <div></div>
+  </body>
+</html>

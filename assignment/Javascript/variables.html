@@ -1,0 +1,97 @@
+<!-- 4 ways to declare a Javascript variable
+using "var", "let","const"
+using nothing
+variables are container for storing data values-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable</title>
+  </head>
+  <body>
+    <div>
+      <h2>Defining a variable</h2>
+      <p id="var"></p>
+      <script>
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        document.getElementById("var").innerHTML = "The value of Z is: " + z;
+      </script>
+    </div>
+    <div>
+      <h2>Defining a variable by "let"</h2>
+
+      <p id="let"></p>
+      <script>
+        let a = 6;
+        let b = 7;
+        let c = a + b;
+        document.getElementById("let").innerHTML = "The value of C is:" + z;
+      </script>
+    </div>
+    <div>
+      <h2>Javascript constant</h2>
+      <p id="const"></p>
+      <script>
+        const price1 = 50;
+        const price2 = 70;
+        let total = price1 + price2;
+        document.getElementById("const").innerHTML =
+          "The total cost is: " + total;
+      </script>
+    </div>
+    <div>
+      <h2>Identifiers</h2>
+      <p>javaScript identifiers are case-sensitive</p>
+      <p id="str"></p>
+      <script>
+        let carName = "volvo";
+        document.getElementById("str").innerHTML = carName;
+      </script>
+    </div>
+    <div>
+      <h2>Javascript Datatypes</h2>
+      <p id="data"></p>
+      <script>
+        const pi = 110260;
+        let person = "Shwet";
+        let answer = "Yes, that's me";
+        document.getElementById("data").innerHTML =
+          pi + "<br>" + person + "<br>" + answer;
+      </script>
+    </div>
+    <div>
+      <!-- defining a const object and arrays
+      you can create a constant array and can change an element of the array
+     -->
+      <h2>Conatant Array</h2>
+      <p id="cons"></p>
+      <script>
+        const bulb = ["Phillips", "Wipro", "Surya"];
+        bulb[2] = "Bajaj";
+        bulb.push("Havells");
+        document.getElementById("cons").innerHTML = bulb + "<br>" + bulb;
+      </script>
+    </div>
+    <div>
+      <!--Change the properties of constant objects-->
+      <h2>Constant Objects</h2>
+      <p id="obj"></p>
+      <script>
+        const car = { type: "Holder", model: "600", color: "white" };
+        car.color = "blue";
+        car.company = "Wipro";
+        document.getElementById("obj").innerHTML =
+          "Car owner is" +
+          "<br>" +
+          car.company +
+          "<br>" +
+          "car color is " +
+          car.color;
+      </script>
+    </div>
+  </body>
+</html>

@@ -18,3 +18,8 @@ console.log(lastname);
 const intrestRate = 0.3;
 
 console.log(intrestRate);
+
+//Function Declaration//
+function walk() {
+    console.log('walk')
+}
