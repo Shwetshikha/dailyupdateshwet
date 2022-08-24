@@ -23,3 +23,4 @@ console.log(intrestRate);
 function walk() {
     console.log('walk')
 }
+typeof 0
