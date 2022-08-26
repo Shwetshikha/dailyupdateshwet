@@ -21,4 +21,6 @@ console.log(num.includes('a'));
 
 //for finding the array particularly from a particular position//
 console.log(num.indexOf(9, 2));
-console.log(num.indexOf(10, 0));
+console.log(num.indexOf(10, 0)); // the second position defines from where the search is begining//
+ // Array are special variable, which can hold more than one value//
+ 
