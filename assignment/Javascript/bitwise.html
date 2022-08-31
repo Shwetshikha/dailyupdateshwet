@@ -7,7 +7,102 @@
     <title>BitWise Operations</title>
 </head>
 <body>
-    
+    <div>
+        <h2>JavaScript Bitwise AND</h2>
+
+<p id="demo">My First Paragraph.</p>
+
+<script>
+document.getElementById("demo").innerHTML = 7 & 2;
+</script>
+    </div>
+    <div>
+        <h2>JavaScript Convert Decimal to Binary</h2>
+
+<p id="con"></p>
+
+<script>
+document.getElementById("con").innerHTML = dec2bin(-5);
+function dec2bin(dec){
+  return (dec >>> 0).toString(2);
+}
+</script>
+
+    </div>
+    <div>
+        <h2>JavaScript Convert Binary to Decimal</h2>
+
+<p id="bin"></p>
+
+<script>
+document.getElementById("bin").innerHTML = bin2dec(101);
+function bin2dec(bin){
+  return parseInt(bin, 9).toString(10);
+}
+</script>
+    </div>
+
+    <div>
+        <!--REGULAR EXPRESION-->
+        <h2>JavaScript String Methods</h2>
+
+<p>Search a string for "W3Schools", and display the position of the match:</p>
+
+<p id="reg"></p>
+
+<script>
+let text = "This is webpage for W3Schools!"; 
+let n = text.search("W3Schools");
+document.getElementById("reg").innerHTML = n;
+</script>
+    </div>
+<div>
+    <h2>Finding the string anywhere in the text</h2>
+    <p id="any"></p>
+    <script> 
+    let stat = "This is some webpage for some w3school for Javascript";
+    let w = stat.search(/w3school/i);
+    document.getElementById("any").innerHTML = w;
+    </script>
+</div>
+<div>
+    <!-- REPLACING A STRING-->
+    <h2>JavaScript String Methods</h2>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="rep">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("rep").innerHTML;
+  document.getElementById("rep").innerHTML =
+  text.replace(/microsoft/i, "W3Schools");
+}
+</script>
+</div>
+<div>
+    <p>Do a global search for the character "h" in a string:</p>
+
+<p id="rem"></p>
+
+<script>
+let one = "Is this all there is something with regular expression?";
+let result = one.match(/[he]/g);
+document.getElementById("rem").innerHTML = result;
+</script>
+
+</div>
+<div>y
+    <p id="fou"></p>
+    <script>
+        const obj = /t/.exec("The best things happens in life");
+        document.getElementById("fou").innerHTML = "Found " + ''+ obj[0] + " at the position " +
+        obj.index + "in the text:" + obj.input;
+    </script>
+</div>
     
 </body>
 </html>
