@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <div>
+        <h2>JavaScript Class</h2>
+
+<p>How to use a JavaScript Class.</p>
+
+<p id="cls"></p>
+
+<script>
+class Car {
+  constructor(name, year, type) {
+    this.name = name;
+    this.year = year;
+    this.type = type;
+  }
+}
+
+const myCar = new Car("Ford", 2014, "Suv");
+document.getElementById("demo").innerHTML =
+myCar.name + " " + myCar.year + " " + car.type; 
+</script>
+
+    </div>
+    <div>
+        <h2>JavaScript Class Method</h2>
+
+<p>How to define and use a Class method.</p>
+
+<p id="dem"></p>
+
+<script>
+class Caar {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+let myCaar = new Caar("Ford", 2010);
+document.getElementById("dem").innerHTML =
+"My car is " + myCaar.age() + " years old.";
+</script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- JAVASCRIPT CONVERSION
+two ways 1. by use of js Functions
+2. automatically by javascript-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT TYPE CONVERSION</title>
+</head>
+<body>
+    <div>
+        <h1>JavaScript Numbers</h1>
+<h2>The Number() Method</h2>
+
+<p>The Number() metod converts a variable (or value) into a number:</p>
+
+<p id="num"></p>
+
+<script>
+document.getElementById("num").innerHTML =
+Number("3.14") + "<br>" +
+Number(Math.PI) + "<br>" +
+Number("    ") + "<br>" +
+Number("") + "<br>" +
+Number("99 88") + "<br>" +
+Number("John") + "<br>";
+</script>
+    </div>
+    <div>
+        <h2>Type of Operator</h2>
+        <p id="op"></p>
+        <script>
+            let y = '5';
+            let x = +y;
+            document.getElementById("op").innerHTML = typeof y + "<br>" + typeof x; 
+        </script>
+    </div>
+    <div>
+        <h2>Conversion of Number to String</h2>
+        <p id="str"></p>
+        <script>
+            let z = 123;
+document.getElementById("str").innerHTML =
+  String(z) + "<br>" +
+  String(123) + "<br>" +
+  String(100 + 23) + "<br>" + typeof(z)+ 
+  z.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString() +
+   (5 + null) + "<br>"  +
+("5" + null) + "<br>" +
+("5" + 2) + "<br>" +
+("5" - 2) + "<br>" +
+("5" * "2") + "<br>" +
+("5" / "2") + "<br>"
+
+        </script>
+    </div>
+</body>
+</html>

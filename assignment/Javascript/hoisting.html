@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+
+</head>
+<body>
+    <div>
+        <h2>Hoisting</h2>
+        <p id="hoi"></p>
+
+        <script>
+        x = 5; // Assign 5 to x
+        
+        elem = document.getElementById("hoi"); // Find an element 
+        elem.innerHTML = x;           // Display x in the element
+        
+        var x; // Declare x
+        </script>  
+    </div>
+    <div>
+        <h2>JavaScript Hoisting</h2>
+<p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+<p id="demo"></p>
+
+<script>
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err;
+}
+// console.log(carName);
+</script>
+    </div>
+    <div>
+        <p id="init"></p>
+
+        <script>
+        var x = 5;  // Initialize x
+        
+        elem = document.getElementById("init");      // Find an element 
+        elem.innerHTML = "x is " + x + " and y is " + y;  // Display x and y
+        
+        var y = 7;  // Initialize y
+        </script>
+    </div>
+</body>
+</html>
