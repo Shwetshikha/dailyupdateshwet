@@ -1,0 +1,23 @@
+AJAX is not a programming language. <br>
+
+
+AJAX is a technique for accessing web servers from a web page.<br>
+
+
+AJAX stands for Asynchronous JavaScript And XML.<br>
+
+<br>
+The readyState property holds the status of the XMLHttpRequest.<br>
+
+The onreadystatechange property defines a callback function to be executed when the readyState changes.<br>
+
+The status property and the statusText properties hold the status of the XMLHttpRequest object.
+
+<b> GET OR POST <b>
+GET is simpler and faster than POST, and can be used in most cases.
+
+However, always use POST requests when:
+
+A cached file is not an option (update a file or database on the server).
+Sending a large amount of data to the server (POST has no size limitations).
+Sending user input (which can contain unknown characters), POST is more robust and secure than GET.

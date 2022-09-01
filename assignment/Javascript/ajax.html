@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX INTRODUCTION</title>
+</head>
+<body>
+    <div>
+        <h2>The XMLHttpRequest Object</h2>
+
+<div id="demo">
+<p>Let AJAX change this text.</p>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "ajax_info.txt");
+  xhttp.send();
+}
+</script>
+    </div>
+    <div>
+       <p>The Callback Function</p>
+       <div id="call">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        </div>
+        
+        <script>
+        function loadDoc() {
+          const xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("call").innerHTML =
+              this.responseText;
+            }
+          };
+          xhttp.open("GET", "ajax_info.txt");
+          xhttp.send();
+        }
+        </script>
+         
+    </div>
+    <div>
+        <h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="xml"></p>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("xml").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "ajax?fname=Henry&lname=Ford");
+  xhttp.send();
+}
+</script>
+    </div>
+    <div>
+        <div id="demo">
+            <h2>The XMLHttpRequest Object</h2>
+            <button type="button" onclick="loadDoc()">Change Content</button>
+            </div>
+            
+            <script>
+            function loadDoc() {
+              const xhttp = new XMLHttpRequest();
+              xhttp.onload = function() {
+                document.getElementById("demo").innerHTML =
+                this.responseText;
+              }
+              xhttp.open("GET", "ajax_info.txt");
+              xhttp.send();
+            }
+            </script>
+            <div>
+                <h2>The XMLHttpRequest Object</h2>
+<p>The getAllResponseHeaders() function returns all the header information of a resource, like length, server-type, content-type, last-modified, etc:</p>
+
+<p id="header"></p>
+
+<script>
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+  document.getElementById("header").innerHTML =
+  this.getAllResponseHeaders();
+}
+xhttp.open("GET", "ajax_info.txt");
+xhttp.send();
+</script>
+            </div>
+            
+    </div>
+    <div>
+        <h2>The XMLHttpRequest Object</h2>
+
+<p>The getResponseHeader() function is used to return specific header information from a resource, like length, server-type, content-type, last-modified, etc:</p>
+
+<p>Last modified: <span id="modify"></span></p>
+
+<script>
+const xhttp=new XMLHttpRequest();
+xhttp.onload = function() {
+  document.getElementById("modify").innerHTML =
+  this.getResponseHeader("Last-Modified");
+}
+xhttp.open("GET", "ajax_info.txt");
+xhttp.send();
+</script>
+
+    </div>
+    <div>
+        
+    </div>
+    
+</body>
+</html>
